@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two:400,700|Open+Sans:400,700|Quicksand:400,700|Raleway:400,700');
+
+
+/*
+
+
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Comfortaa', cursive;
+
+    font-family: 'Lobster Two', cursive;
+
+*/
+
+body, html{
+            padding: 0;
+            margin: 0;
+        }
+        
+        #wrapper{
+            margin: 0;
+        }
+
+
+*{
+    background-position: center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.jumbotron{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 576px){
+.jumbotron {
+    padding: 0;
+}
+}
+
+.small{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#nav{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.79);
+    top: 0;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 1em;
+}
+
+#nav *{
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+#nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+#nav ul a{
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav ul li{
+    margin-left: 20px;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+    transition: all 0.2ms ease;
+}
+
+#nav ul li:hover{
+    color: rgb(255, 255, 255);
+}
+
+.active{
+    color: #fff;
+    font-weight: 700;
+}
+
+#banner{
+    background-image: url("http://s16.radikal.ru/i191/1708/df/717b83e43b58.jpg");
+    height: 80vh;
+    position: relative;
+}
+
+#banner >div, #reserv > div{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner >div{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner h1, #banner p {
+    font-family: 'Ruthie', cursive;
+    color: #fff;
+}
+
+#banner h1{
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+#banner p{
+    font-size: 2em;
+}
+
+#second{
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+#second>div{
+    padding: 10px;
+}
+
+#second>div:nth-of-type(1){
+    grid-row: 1 / 5;
+    grid-column: 1 / 5;
+}
+
+#second>div:nth-of-type(2){
+    background-image: url("https://www.whatsuplife.in/noida/blog/wp-content/uploads/2017/08/fit-bites.jpg");
+    grid-row: 2/5;
+    grid-column: 5 / 8;
+}
+
+#second>div:nth-of-type(3){
+    background-image: url("http://tahaqui.club/wp-content/uploads/2018/01/vegan-restaurant-covent-garden-when-it-comes-to-vegan-only-restaurants-has-herbivores-covered-see-the-second-tab-below-if-you-believe-us-but-what-the-heck-do-you-do-when.jpg");
+    grid-row: 1 / 4;
+    grid-column: 6 / 9;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+#gallery>div{
+    grid-row: 1 / 2;
+}
+
+#gallery>div:nth-of-type(1){
+    background-image: url("https://i1.wp.com/wallarthd.com/wp-content/uploads/2015/04/Pizza-Photography-Wallpaper-Picture.jpg?resize=618%2C386");
+    grid-column: 1/2;
+}
+
+#gallery>div:nth-of-type(2){
+    background-image: url("https://www.vegrecipesofindia.com/wp-content/uploads/2018/03/raj-kachori-chaat.jpg");
+    grid-column: 2/3;
+}
+
+#gallery>div:nth-of-type(3){
+    background-image: url("http://powersquat.ru/images/Pitanye/pasta.jpg");
+    grid-column: 3/4;
+}
+
+#services{
+    margin: 1in auto;
+}
+
+#services h1{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#services > div:nth-of-type(2){
+    margin-top: 1.5em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+#services > div:nth-of-type(2) >div{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#services > div:nth-of-type(2) img{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.display-7{
+    font-size: 2em;
+}
+
+#services .lead{
+    font-size: 1em;
+}
+
+#reserv, #contact{
+    background-image: url("https://thiswallpaper.com/cdn/hdwallpapers/95/restaurant%20wide%20hd%20wallpaper.jpg");
+    height: 50vh;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    margin: 2.5em auto;
+}
+
+#reserv > div{
+    background-color: #fff;
+    padding: 0.2in 0.5in;
+    outline: 5px solid #fff;
+    border: 1px solid #000;
+    font-family: 'Ruthie', cursive;
+}
+
+#menu{
+    display: grid;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#menu > div{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#menu > div:nth-of-type(1) > div{
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 10px 2em;
+    color: #fff;
+    font-family: 'Ruthie', cursive;
+    text-align: center;
+}
+
+#menu p{
+    margin: 0;
+}
+
+#menu > div:nth-of-type(2) {
+    padding: 30px;
+    text-align: center;
+}
+
+#contact > div{
+    background-color: #fff;
+    padding: 0.2in 0.5in;
+    font-family: 'Quicksand', cursive;
+    width: 40vw;
+    text-align: center;
+}
+
+#footer{
+    min-height: 40vh;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+a{
+    color: #fff;
+}
+
+a:active{
+    color: #fff;
+}
+
+a:visited{
+    text-transform: none;
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+
+.servicesList:hover{
+    transform: scale(1.1)
+}
+
+.servicesList > p{
+    visibility: hidden;
+}
+
+.servicesList > h1{
+    transform: translateY(30px)
+}
+
+.servicesList:hover > p{
+    visibility: visible;
+}
+.servicesList:hover >h1{
+    transform: translateY(0px)
+}
+
+.servicesList * {
+    transition: all 0.2s ease-in-out;
+}
